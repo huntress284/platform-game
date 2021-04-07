@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - cherry
+  - player
   layers:
   - Default
   - TransparentFX
@@ -38,15 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: sky
-    uniqueID: 3977097817
-    locked: 0
-  - name: New Layer
-    uniqueID: 2455322331
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: sky
+    uniqueID: 3977097817
+    locked: 0
+  - name: ground
+    uniqueID: 344013793
+    locked: 0
   - name: props
     uniqueID: 3411021037
+    locked: 0
+  - name: player
+    uniqueID: 2014155365
     locked: 0
