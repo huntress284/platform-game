@@ -27,7 +27,14 @@ public class ScoreScript : MonoBehaviour
             ScoreNum = ScoreNum - 2;
             MyScoreText.text = "Score: " + ScoreNum;
         }
-       
+        if (other.CompareTag("alert"))
+        {
+            Debug.Log("Almost there!");
+        }
+        if (other.CompareTag("house"))
+        {
+            Debug.Log("You made it home!");
+        }
     }
 
 }
