@@ -32,9 +32,11 @@ public class ScoreScript : MonoBehaviour
         {
             Debug.Log("Almost there!");
         }
-        if (other.CompareTag("house"))
+        if (other.CompareTag("house") && ScoreNum > 10)
         {
             Debug.Log("You made it home!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
         }
         if (other.CompareTag("closecall"))
         {
