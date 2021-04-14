@@ -15,4 +15,10 @@ public class mainMenu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+
+    }
 }
