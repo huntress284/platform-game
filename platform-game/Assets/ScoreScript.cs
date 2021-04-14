@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -34,6 +35,19 @@ public class ScoreScript : MonoBehaviour
         if (other.CompareTag("house"))
         {
             Debug.Log("You made it home!");
+        }
+        if (other.CompareTag("closecall"))
+        {
+            Debug.Log("That was a close call!");
+        }
+
+        if(ScoreNum < 0)
+        {
+            Debug.Log("Game Over!");
+            Application.Quit();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
         }
     }
 
