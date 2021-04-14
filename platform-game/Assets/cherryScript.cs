@@ -6,6 +6,7 @@ public class cherryScript : MonoBehaviour
 {
     private levelManager gameLevelManager;
     public int cherryScore = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +17,12 @@ public class cherryScript : MonoBehaviour
     {
         
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "player")
         {
 
-
+            //cherryScore = UnityEngine.Random.Range(1, 20);
             Destroy(gameObject);
             cherryScore++;
 
