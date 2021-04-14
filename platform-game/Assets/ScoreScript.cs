@@ -21,7 +21,6 @@ public class ScoreScript : MonoBehaviour
         {
             ScoreNum = ScoreNum + 5;
             MyScoreText.text = "Score: " + ScoreNum;
-
         }
         if (other.CompareTag("spike"))
         {
