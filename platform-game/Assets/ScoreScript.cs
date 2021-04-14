@@ -14,25 +14,20 @@ public class ScoreScript : MonoBehaviour
         MyScoreText.text = "Score: " + ScoreNum;
     }
 
-    void OnTriggerEnter2D(Collider2D cherry)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if(cherry.tag == "cherry")
+        if(other.CompareTag("cherry"))
         {
-            ScoreNum += 1;
+            ScoreNum = ScoreNum + 5;
             MyScoreText.text = "Score: " + ScoreNum;
 
+        }
+        if (other.CompareTag("spike"))
+        {
+            ScoreNum = ScoreNum - 2;
+            MyScoreText.text = "Score: " + ScoreNum;
         }
        
-    }
-    void OnTriggerEnter2D1(Collider2D spike)
-    {
-        if (spike.tag == "spike")
-        {
-            ScoreNum += 1;
-            MyScoreText.text = "Score: " + ScoreNum;
-
-        }
-
     }
 
 }
