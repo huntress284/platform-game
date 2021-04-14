@@ -6,6 +6,7 @@ TagManager:
   tags:
   - cherry
   - player
+  - spike
   layers:
   - Default
   - TransparentFX

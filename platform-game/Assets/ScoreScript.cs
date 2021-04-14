@@ -24,4 +24,15 @@ public class ScoreScript : MonoBehaviour
         }
        
     }
+    void OnTriggerEnter2D1(Collider2D spike)
+    {
+        if (spike.tag == "spike")
+        {
+            ScoreNum += 1;
+            MyScoreText.text = "Score: " + ScoreNum;
+
+        }
+
+    }
+
 }
